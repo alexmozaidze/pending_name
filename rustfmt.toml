@@ -1,0 +1,18 @@
+ignore = [
+    "src/consts.rs"
+]
+
+imports_layout = "HorizontalVertical"
+imports_granularity = "Crate"
+reorder_imports = true
+
+# Enum variants are usualy somewhat related, so indenting them makes sense
+enum_discrim_align_threshold = 60
+# But struct fields might not be related, it's better to align them manually
+#struct_field_align_threshold = 60
+
+format_macro_matchers = true
+match_block_trailing_comma = true
+overflow_delimited_expr = true
+
+use_field_init_shorthand = true
